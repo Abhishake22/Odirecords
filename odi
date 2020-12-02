@@ -1,0 +1,5 @@
+# finding No. of matches won by Teams
+
+select matches_won,count(*),year
+from odirecords
+group by matches_won order by count(*) desc
