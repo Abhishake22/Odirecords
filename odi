@@ -21,3 +21,14 @@ from odirecords
 where year between 2015 and 2020
 group by Matches_Won order by won desc
 limit 10
+
+
+#Players with the most number of Ducks for India in odi's
+
+select player,0s as No_of_ducks,inns
+from india_batting
+group by player
+order by 0s desc
+limit 10;
+
+
