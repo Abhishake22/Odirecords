@@ -32,3 +32,11 @@ order by 0s desc
 limit 10;
 
 
+
+#Best Allrounders for India
+
+select a.player,a.span,a.Runs,b.wkts
+from india_batting
+inner join india_bowling
+ON india_batting.player=india_bowling.player
+where india_batting.Runs>1500 and india_bowling.wkts>100
