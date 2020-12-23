@@ -40,3 +40,12 @@ from india_batting
 inner join india_bowling
 ON india_batting.player=india_bowling.player
 where india_batting.Runs>1500 and india_bowling.wkts>100
+
+
+
+#Players who has taken more than 250 wickets
+
+select player,wkts,Econ
+from india_bowling
+group by player,Econ
+having wkts>250
